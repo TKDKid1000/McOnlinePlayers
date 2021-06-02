@@ -10,7 +10,7 @@ $(document).ready(function(){
       var players = data.players.uuid;
       var heads = {};
       $.each(players, function(name, uuid) {
-        heads[name] = `https://visage.surgeplay.com/head/${uuid}.png`
+        heads[name] = `https://crafatar.com/renders/head/${uuid}.png`
       })
       console.log(players);
       $.each(heads, function(name, image) {
@@ -36,7 +36,7 @@ $(document).ready(function(){
         $.getJSON(`https://playerdb.co/api/player/minecraft/${name}`, function(data) {
           console.log(data.data.player.id)
           var img = document.createElement("img")
-          img.src = `https://visage.surgeplay.com/head/${data.data.player.id}.png`;
+          img.src = `https://crafatar.com/renders/head/${data.data.player.id}.png`;
           if (element.data("size") != "null") {
             img.style.width = element.data("size")
             img.style.height = "auto"
