@@ -28,10 +28,11 @@
             SOFTWARE. -->
         <!-- 
         HOW TO USE
+        !!!YOU MUST SET QUERY-ENABLED IN SERVER.PROPERTIES IN ORDER TO USE THIS!!!
         data-players is the server ip, data-size is the css size of the images. Just put null as the value to use other css sizing.
         All images of heads have the css class "playerhead"
         A piece of text saying "Server Offline" will appear when the server is down. You can style it as it has the css class "offline"
-        IMPORTANT: due to how mcsrvstatus works, you cannot use proxy backed servers (bungeecord, waterfall, velocity) only direct servers -->
+        IMPORTANT: due to how mojang api works, you have to specify the "data-proxy" in order for the script to change to work with proxies. -->
         <div data-players="server.com" data-size="10%"></div>
     </body>
 </html>
